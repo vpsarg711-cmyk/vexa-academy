@@ -1,0 +1,185 @@
+:root{
+--bg:#030b18;
+--card:#0b1527;
+
+--blue:#00aaff;
+--gold:#ffcc00;
+--red:#ff5c6c;
+--green:#00d084;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Segoe UI',sans-serif;
+
+background:
+radial-gradient(circle at top,
+rgba(0,170,255,.12),
+transparent 45%),
+#030b18;
+
+color:white;
+
+padding:20px;
+min-height:100vh;
+}
+
+.hero{
+max-width:900px;
+margin:auto;
+margin-bottom:25px;
+}
+
+.banner{
+width:100%;
+display:block;
+
+border-radius:28px;
+
+box-shadow:
+0 0 25px rgba(0,170,255,.20),
+0 0 50px rgba(0,170,255,.10);
+}
+
+.counter{
+
+text-align:center;
+
+margin-bottom:25px;
+
+color:#7bdcff;
+
+font-weight:700;
+
+font-size:1rem;
+}
+
+.grid{
+
+max-width:900px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:16px;
+}
+
+.card{
+
+background:var(--card);
+
+border-radius:24px;
+
+min-height:130px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+gap:12px;
+
+text-decoration:none;
+
+color:white;
+
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+}
+
+.card i{
+font-size:42px;
+}
+
+.card span{
+text-align:center;
+font-size:1rem;
+}
+
+.premium{
+border:2px solid var(--gold);
+}
+
+.android{
+border:2px solid var(--blue);
+}
+
+.iphone{
+border:2px solid var(--gold);
+}
+
+.xiaomi{
+border:2px solid var(--red);
+}
+
+.support{
+border:2px solid var(--green);
+}
+
+.premium:hover{
+box-shadow:0 0 20px rgba(255,204,0,.5);
+}
+
+.android:hover{
+box-shadow:0 0 20px rgba(0,170,255,.5);
+}
+
+.iphone:hover{
+box-shadow:0 0 20px rgba(255,204,0,.5);
+}
+
+.xiaomi:hover{
+box-shadow:0 0 20px rgba(255,92,108,.5);
+}
+
+.support:hover{
+box-shadow:0 0 20px rgba(0,208,132,.5);
+}
+
+.npv-logo{
+font-size:42px;
+font-weight:900;
+color:#00aaff;
+}
+
+.npv-logo span{
+color:#ffcc00;
+}
+
+footer{
+
+margin-top:30px;
+
+text-align:center;
+
+color:#8d98ab;
+
+font-size:.9rem;
+}
+
+@media(max-width:500px){
+
+.grid{
+gap:12px;
+}
+
+.card{
+min-height:115px;
+}
+
+}
