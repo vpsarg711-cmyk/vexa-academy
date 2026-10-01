@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VPS ARG Academy | Tutoriales con VEXA IA</title>
+<meta name="description" content="Academia de tutoriales de VPS ARG Premium Lite ☆: configurá tu teléfono, la aplicación oficial y tu conexión paso a paso con la guía de VEXA IA.">
+<meta name="theme-color" content="#030b18">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="VPS ARG Academy">
+<meta property="og:title" content="VPS ARG Academy | Tutoriales con VEXA IA">
+<meta property="og:description" content="Configurá tu teléfono, la aplicación oficial y tu conexión VPS ARG Premium Lite ☆ paso a paso.">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Logo de VPS ARG Premium Lite">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<a class="skip-link" href="#tutoriales">Saltar a los tutoriales</a>
+
+<header class="hero">
+<div class="hero-brand">
+<picture>
+<source srcset="assets/img/vps-arg-logo.webp" type="image/webp">
+<img class="hero-logo" src="assets/img/vps-arg-logo.jpg" width="720" height="480" alt="VPS ARG Premium Lite ☆">
+</picture>
+</div>
+
+<div class="hero-text">
+<p class="hero-kicker">VPS ARG Academy · con VEXA IA</p>
+<h1>¡Bienvenido a la academia!</h1>
+<p class="hero-lead">
+Tutoriales para configurar tu teléfono, la aplicación oficial y tu conexión
+VPS ARG Premium Lite ☆, paso a paso. VEXA te ayuda a encontrar el que necesitás.
+</p>
+<p class="counter" id="contador" aria-live="polite">Tutoriales disponibles</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#tutoriales">
+<i class="fas fa-play" aria-hidden="true"></i> Ver tutoriales
+</a>
+<a class="btn btn-support" href="https://wa.me/5493435350260" target="_blank" rel="noopener noreferrer">
+<i class="fab fa-whatsapp" aria-hidden="true"></i> Soporte
+</a>
+</div>
+</div>
+
+<figure class="hero-vexa">
+<picture>
+<source srcset="assets/img/vexa-promotora.webp" type="image/webp">
+<img src="assets/img/vexa-promotora.jpg" width="640" height="640" alt="VEXA IA, promotora virtual y asistente de VPS ARG Academy">
+</picture>
+</figure>
+</header>
+
+<main id="tutoriales" class="academy" tabindex="-1">
+
+<nav class="filters" aria-label="Categorías de tutoriales">
+<div class="filters-list" id="filtros"></div>
+</nav>
+
+<p class="filter-status" id="estado-filtro" aria-live="polite" hidden>
+<span id="estado-filtro-texto"></span>
+<button type="button" class="link-btn" id="ver-todo">Ver todo</button>
+</p>
+
+<div id="secciones"></div>
+
+<noscript>
+<p class="noscript">Para ver los tutoriales necesitás activar JavaScript en tu navegador.</p>
+</noscript>
+
+<section class="support-section" aria-labelledby="titulo-soporte">
+<h2 id="titulo-soporte">¿Necesitás ayuda?</h2>
+<p>Si no encontrás tu tutorial o algo no funciona, escribinos.</p>
+<a class="card support" href="https://wa.me/5493435350260" target="_blank" rel="noopener noreferrer">
+<i class="fab fa-whatsapp" aria-hidden="true"></i>
+<span class="card-title">Soporte por WhatsApp</span>
+</a>
+</section>
+
+</main>
+
+<footer>
+© 2026 VPS ARG Premium Lite ☆ · Tutoriales y configuración · Asistente visual VEXA IA
+</footer>
+
+<button type="button" class="vexa-toggle" id="vexa-toggle" aria-expanded="false" aria-controls="vexa-panel">
+<picture>
+<source srcset="assets/img/vexa-avatar.webp" type="image/webp">
+<img src="assets/img/vexa-avatar.jpg" width="160" height="160" alt="">
+</picture>
+<span class="vexa-toggle-label">Ayuda de VEXA</span>
+</button>
+
+<section class="vexa-panel" id="vexa-panel" role="dialog" aria-labelledby="vexa-titulo" hidden>
+<header class="vexa-panel-head">
+<picture>
+<source srcset="assets/img/vexa-avatar.webp" type="image/webp">
+<img src="assets/img/vexa-avatar.jpg" width="160" height="160" alt="">
+</picture>
+<div>
+<h2 id="vexa-titulo" tabindex="-1">VEXA</h2>
+<p>Asistente de VPS ARG Academy</p>
+</div>
+<button type="button" class="vexa-close" id="vexa-cerrar" aria-label="Cerrar asistente">
+<i class="fas fa-xmark" aria-hidden="true"></i>
+</button>
+</header>
+<div class="vexa-messages" id="vexa-mensajes" aria-live="polite"></div>
+<div class="vexa-options" id="vexa-opciones"></div>
+<p class="vexa-note">VEXA es una guía visual con opciones fijas, no un chat con inteligencia artificial.</p>
+</section>
+
+<script src="js/app.js"></script>
+</body>
+</html>
